@@ -306,8 +306,6 @@ class ResumableTrainer:
             self.model = self.model_fn()
             self.initial_epoch = 0
 
-        self.model.summary()
-
         # 5. Build callbacks
         callbacks = self._build_callbacks()
 
